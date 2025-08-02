@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Flexbox Pricing Table</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sono:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        font-family: "Sono", sans-serif;
+        background: linear-gradient(to bottom right, #000000, #4b2e00), #000;
+        min-height: 100vh;
+        margin: 0;
+        padding: 0;
+      }
+      .pricing-container {
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        gap: 2rem;
+        margin: 2rem auto;
+        flex-wrap: wrap;
+      }
+
+      .pricing-plan {
+        background-color: rgb(240, 240, 240);
+        padding: 20px;
+        border-radius: 12px;
+        text-align: center;
+        width: 250px;
+        font-weight: bold;
+      }
+
+      .plan-title {
+        font-size: large;
+      }
+
+      .plan-price {
+        font-size: xx-large;
+        font-weight: bolder;
+      }
+
+      .plan-features {
+        font-size: medium;
+        font-weight: lighter;
+        list-style: none;
+        padding-left: 0;
+      }
+
+      .plan-button {
+        background-color: rgb(240, 157, 4);
+        color: white;
+        border-radius: 5px;
+        border: none;
+        padding: 10px;
+      }
+
+      .plan-button:hover {
+        transform: scale(1.03);
+        background-color: rgb(230, 182, 93);
+        color: rgb(52, 50, 50);
+        font-weight: bold;
+        box-shadow: 0 5px 16px rgba(41, 41, 41, 0.2);
+        cursor: pointer;
+      }
+
+      h1 {
+        color: whitesmoke;
+        font-family: "Poppins", sans-serif;
+        font-weight: 700;
+        font-size: 2.5rem;
+        text-align: center;
+        margin-top: 2rem;
+      }
+
+      .colorChange {
+        color: goldenrod;
+      }
+
+      .gold-line {
+        height: 2px;
+        width: 75%;
+        margin: 2rem auto;
+        background: linear-gradient(
+          to right,
+          transparent,
+          #f5d442,
+          #ffe98a,
+          #f5d442,
+          transparent
+        );
+        border-radius: 2px;
+        border: none;
+      }
+
+      .gold-line-bottom {
+        height: 1px;
+        width: 50%;
+        margin: 2rem auto;
+        background: linear-gradient(
+          to right,
+          transparent,
+          #f5d547,
+          #feea92,
+          #f5d547,
+          transparent
+        );
+        border-radius: 2px;
+        border: none;
+      }
+
+      .hero-header {
+        position: relative;
+        width: 100%;
+        height: 200px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .logo {
+        position: absolute;
+        left: 200px;
+        top: 50%;
+        transform: translateY(-50%);
+        height: 150px;
+        width: auto;
+      }
+
+      .hero-text {
+        font-family: "Poppins", sans-serif;
+        font-weight: 700;
+        font-size: 2.5rem;
+        color: whitesmoke;
+        text-align: center;
+      }
+
+      /* Hint: What can you do with a media query and flexbox? */
+      @media (max-width: 1250px) {
+        .pricing-container {
+          flex-direction: column;
+          align-items: center;
+        }
+
+        .pricing-plan {
+          margin-bottom: 1.5rem;
+        }
+
+        .hero-header {
+          flex-direction: column;
+          height: auto;
+          gap: 1rem;
+          padding-top: 2rem;
+          align-items: center;
+        }
+
+        .logo {
+          position: static;
+          transform: none;
+          height: 100px;
+        }
+
+        .hero-text {
+          font-size: 2.5rem;
+          padding: 0 1rem;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="hero-header">
+      <img class="logo" src="./logo.png" alt="logo" />
+      <h1 class="hero-text">
+        Choose the plan that <span class="colorChange">BEST</span><br />
+        suits your needs
+      </h1>
+    </div>
+    <hr class="gold-line" />
+    <div class="pricing-container">
+      <div class="pricing-plan">
+        <div class="plan-title">Basic</div>
+        <div class="plan-price">$9.99/month</div>
+        <ul class="plan-features">
+          <li>✅ 10GB Storage</li>
+          <li>✅ 1 User</li>
+          <li>🚫 Support</li>
+        </ul>
+        <button class="plan-button">Sign Up</button>
+      </div>
+      <div class="pricing-plan">
+        <div class="plan-title">Standard</div>
+        <div class="plan-price">$19.99/month</div>
+        <ul class="plan-features">
+          <li>✅ 50GB Storage</li>
+          <li>✅ 5 Users</li>
+          <li>✅ Phone &amp; Email Support</li>
+        </ul>
+        <button class="plan-button">Sign Up</button>
+      </div>
+      <div class="pricing-plan">
+        <div class="plan-title">Premium</div>
+        <div class="plan-price">$49.99/month</div>
+        <ul class="plan-features">
+          <li>✅ 100GB Storage</li>
+          <li>✅ 10 Users</li>
+          <li>✅ 24/7 Support</li>
+        </ul>
+        <button class="plan-button">Sign Up</button>
+      </div>
+    </div>
+    <footer>
+      <hr class="gold-line-bottom" />
+    </footer>
+  </body>
+</html>

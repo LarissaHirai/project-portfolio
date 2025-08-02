@@ -1,0 +1,240 @@
+.gradient-background {
+  background: linear-gradient(
+      300deg,
+      rgba(39, 110, 155, 0.7),
+      rgba(68, 87, 151, 0.7),
+      rgba(109, 60, 171, 0.7),
+      rgba(142, 44, 162, 0.7)
+    ),
+    #000;
+  background-size: 180% 180%;
+  animation: gradient-animation 18s ease infinite;
+}
+
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 50% 50%;
+  }
+  75% {
+    background-position: 50% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/*.text-larissa {
+  color: black;
+  font-family: "Bitcount Grid Double", system-ui;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
+  font-variation-settings: "slnt" -2, "CRSV" 0.5, "ELSH" 0, "ELXP" 0;
+}*/
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+.text-intro {
+  color: black;
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: white;
+  padding: 1rem 0;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  z-index: 1000;
+}
+
+.navbar-container {
+  max-width: 900px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  margin-bottom: 0.5rem;
+}
+
+.navbar-container a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.navbar-container a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 0%;
+  height: 2px;
+  background-color: #6d3cab;
+  transition: width 0.3s ease;
+}
+
+.navbar-container a:hover {
+  color: #6d3cab;
+}
+
+.navbar-container a:hover::after {
+  width: 100%;
+}
+
+/* só pra dar espaço pra ver o conteúdo abaixo */
+.hero {
+  margin-top: 100px;
+  height: 100vh;
+  background: linear-gradient(to right, #6d3cab, #445797);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 2rem;
+}
+
+.project-card {
+  position: relative;
+  overflow: hidden;
+}
+
+.project-img {
+  transition: transform 0.3s ease;
+}
+
+.project-card:hover .project-img {
+  transform: scale(1.05);
+}
+
+.project-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-radius: 0.5rem;
+}
+
+.project-card:hover .project-overlay {
+  opacity: 1;
+}
+
+.project-overlay h5 {
+  font-weight: bold;
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+}
+
+.project-overlay p {
+  font-size: 0.95rem;
+  margin: 0.25rem 0;
+}
+
+#hero {
+  min-height: 100vh;
+}
+
+.float-animation {
+  animation: float 3.5s ease-in-out infinite;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-12px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.linkContato a {
+  color: #ffffff; /* Altere para a cor desejada (exemplo: branco) */
+  text-decoration: none; /* Remove o sublinhado, opcional */
+}
+
+.linkContato a:hover {
+  color: #ffcc00; /* Cor ao passar o mouse, opcional */
+}
+
+.btn-curriculo {
+  background-color: rgba(116, 33, 132, 0.9);
+  color: white;
+  border-radius: 5px;
+  border: none;
+  padding: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.btn-curriculo:hover {
+  transform: scale(1.02);
+  filter: brightness(1.2);
+}
+
+section {
+  scroll-margin-top: 80px;
+}
+
+.language-switch {
+  position: fixed;
+  top: 0.5rem;
+  left: 3rem;
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.8);
+  z-index: 9999;
+  display: flex;
+  gap: 10px;
+  border-bottom-left-radius: 8px;
+}
+
+.language-switch button {
+  border: none;
+  background-color: #6c3cab;
+  color: white;
+  padding: 6px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.language-switch button:hover {
+  background-color: #8e2ca2;
+}
+
+@media (max-width: 768px) {
+  .language-switch {
+    left: auto;
+    right: 0;
+    top: 0.5rem;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 8px;
+  }
+}

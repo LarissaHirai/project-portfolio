@@ -83,7 +83,10 @@ export default function Projects() {
                 src={techStudio}
                 alt="Tech Studio"
               />
-              <a href="/techStudio/index.html" target="_blank">
+              <a
+                href="https://larissahirai.github.io/techStudio/"
+                target="_blank"
+              >
                 <div className="project-overlay">
                   <h5>Tech Studio</h5>
                   <p>
@@ -105,7 +108,10 @@ export default function Projects() {
                 src={priceRise}
                 alt="Price Rise"
               />
-              <a href="/priceRise/index.html" target="_blank">
+              <a
+                href="https://larissahirai.github.io/priceRise/"
+                target="_blank"
+              >
                 <div className="project-overlay">
                   <h5>Price Rise</h5>
                   <p>

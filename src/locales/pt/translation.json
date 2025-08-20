@@ -23,9 +23,10 @@
   "about_me_title": "Sobre Mim...",
   "about_me_1": "Olá! Meu nome é <strong>Larissa Mitie Curi Hirai</strong>, sou formada em Ciência da Computação pela Universidade Federal do Tocantins (UFT), com foco em desenvolvimento de software, inteligência artificial e análise de dados.",
   "about_me_2": "Tenho experiência no desenvolvimento de aplicações web full stack utilizando <strong>Python, JavaScript, PL/SQL, banco de dados Oracle, SQL</strong>. Atuo em projetos que envolvem desde sistemas de videochamada com chat em tempo real até soluções com inteligência artificial para transcrição, tradução de áudio e diagnóstico de doenças mentais.",
-  "about_me_3": "Também participei do desenvolvimento de um sistema de gerenciamento de demandas durante meu estágio, contribuindo para a organização e otimização de processos internos.",
+  "about_me_3": "Durante meu estágio no <strong>Tribunal de Contas da União (TCU)</strong>, participei do desenvolvimento de um sistema de gerenciamento de demandas, contribuindo para a organização e otimização de processos internos. <a href='/docs/pt/CARTALARISSAA_assinado.pdf' target='_blank'>Veja aqui minha carta de recomendação</a>.",
   "about_me_4": "Tenho curiosidade em aprender coisas novas e encaro desafios como oportunidades de crescimento, pois acredito ser a melhor forma de evoluir como profissional.",
   "about_me_5": "Gosto de desenvolver projetos pessoais nos meus momentos livres, especialmente nas áreas de <em>desenvolvimento web</em> e <em>inteligência artificial</em>.",
+
   "about_me_buttom": "Currículo",
   "contact_title": "Vamos Entrar em Contato",
   "contact_phrase": "Sinta-se à vontade para entrar em contato comigo por e-mail ou por meio das minhas redes profissionais."

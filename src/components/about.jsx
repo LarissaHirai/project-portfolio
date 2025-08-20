@@ -47,7 +47,12 @@ export default function About() {
                 components={{ strong: <strong />, em: <em /> }}
               />
             </p>
-            <p>{t("about_me_3")}</p>
+            <p>
+              <Trans
+                i18nKey="about_me_3"
+                components={{ strong: <strong />, em: <em />, a: <a /> }}
+              />
+            </p>
             <p>{t("about_me_4")}</p>
             <p>
               <Trans
